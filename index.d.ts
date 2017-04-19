@@ -1,3 +1,3 @@
-export { UserAdminModule }      from './lib/user-amdin.module';
+export { UserAdminModule }      from './lib/user-admin.module';
 
 export { UserAdminComponent }   from './lib/user-admin.component';
