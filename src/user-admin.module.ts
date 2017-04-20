@@ -13,14 +13,14 @@ import { UsersService }             from './users.service';
 
 import { UserListComponent }    from './user-list.component';
 
-const loginRoutes: Routes = [
+const routes: Routes = [
 ];
 
 @NgModule({
     imports: [ 
         BrowserModule,
         HttpModule,
-        RouterModule.forRoot(loginRoutes),
+        RouterModule.forRoot(routes),
 
         AlertModule,
         ModalModule,
