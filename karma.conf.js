@@ -1,7 +1,7 @@
 module.exports = function(config) {
 
     var appBase    = 'app/';      // transpiled app JS and map files
-    var appSrcBase = 'app/';      // app source TS files
+    var appSrcBase = 'src/';      // app source TS files
     var appAssets  = 'base/app/'; // component assets fetched by Angular's compiler
     var libBase    = 'lib/';      // transpiled app JS and map files
     var libAssets  = 'base/lib/'; // component assets fetched by Angular's compiler

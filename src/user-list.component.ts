@@ -12,7 +12,7 @@ import { User }                     from './user.model';
   template: `
 <div class="row">
     <div class="col-xs-4">
-        <button class="btn btn-info btn-sm" routerLink="/user/">Create a New User</button>
+        <button class="btn btn-info btn-sm" routerLink="/user/">Create a New User!!!!!</button>
     </div>
 </div>
 <div class="row">
