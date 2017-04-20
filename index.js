@@ -1,3 +1,3 @@
-exports.UserAdminModule       = require('./lib/user-admin.module').UserAdminModule;
+exports.UserAdminModule      = require('./lib/user-admin.module').UserAdminModule;
 
-exports.UserAdminComponent    = require('./lib/user-admin.component').UserAdminComponent;
+exports.UserListComponent    = require('./lib/user-list.component').UserListComponent;
