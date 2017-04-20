@@ -9,6 +9,7 @@ import { AlertModule,
          ModalModule,
          TabsModule }               from 'ngx-bootstrap';
 
+import { AuthService }              from './auth.service';
 import { UsersService }             from './users.service';
 
 import { UserListComponent }    from './user-list.component';
@@ -30,10 +31,10 @@ const routes: Routes = [
         UserListComponent 
     ],
     exports: [ 
-        UsersService,
         UserListComponent 
     ],
     providers: [
+        AuthService,
         UsersService
     ]
 })
