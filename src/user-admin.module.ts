@@ -1,16 +1,26 @@
-import { NgModule }           from '@angular/core';
+import { NgModule }             from '@angular/core';
 
-import { UserAdminComponent } from './user-admin.component';
+import { BrowserModule }            from '@angular/platform-browser';
+import { HttpModule }               from '@angular/http';
+
+import { AuthService }              from './auth.service';
+import { UsersService }             from './users.service';
+
+import { UserListComponent }    from './user-list.component';
 
 @NgModule({
     imports: [ 
 
     ],
     declarations: [ 
-        UserAdminComponent 
+        UserListComponent 
     ],
     exports: [ 
-        UserAdminComponent 
+        UserListComponent 
     ],
+    providers: [
+        AuthService,
+        UsersService
+    ]
 })
 export class UserAdminModule {}
