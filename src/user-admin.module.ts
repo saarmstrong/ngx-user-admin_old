@@ -12,7 +12,9 @@ import { AlertModule,
 import { AuthService }              from './auth.service';
 import { UsersService }             from './users.service';
 
-import { UserListComponent }    from './user-list.component';
+import { UserListComponent }        from './user-list.component';
+import { UserEventLogComponent }    from './user-event-log.component';
+import { UsersEventLogComponent }   from './users-event-log.component';
 
 const routes: Routes = [
 ];
@@ -28,10 +30,14 @@ const routes: Routes = [
         TabsModule
     ],
     declarations: [ 
-        UserListComponent 
+        UserListComponent, 
+        UserEventLogComponent,
+        UsersEventLogComponent
     ],
     exports: [ 
-        UserListComponent 
+        UserListComponent,
+        UserEventLogComponent,
+        UsersEventLogComponent
     ],
     providers: [
         AuthService,
