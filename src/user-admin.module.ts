@@ -14,6 +14,7 @@ import { AlertModule,
 
 import { AuthService }              from './auth.service';
 import { UsersService }             from './users.service';
+import { MessageService }           from './message.service';
 
 import { UserListComponent }        from './user-list.component';
 import { UserEventLogComponent }    from './user-event-log.component';
@@ -48,13 +49,14 @@ const routes: Routes = [
         UserListComponent,
         UserEventLogComponent,
         UsersEventLogComponent
-    ]
+    ],
+    providers: [MessageService]
 })
 export class UserAdminModule {
     static forRoot(): ModuleWithProviders {
         return {
             ngModule: UserAdminModule,
-            providers: [AuthService, UsersService]
+            providers: [AuthService, UsersService, MessageService]
         }
     }
 }
